@@ -1,0 +1,20 @@
+site_name: SimpleTooltip
+theme:
+  name: material
+nav:
+  - Home: index.md
+  - 'Getting Started': getting-started.md
+  - References: references.md
+docs_dir: src
+site_dir: pub
+markdown_extensions:
+  - smarty
+  - pymdownx.tabbed
+  - pymdownx.highlight
+  - pymdownx.superfences
+extra_css:
+  - assets/extra.css
+  - lib/SimpleTooltip.css
+extra_javascript:
+  - lib/SimpleTooltip.js
+  - assets/examples.js

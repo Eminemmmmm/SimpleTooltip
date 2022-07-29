@@ -1,0 +1,76 @@
+.ST {
+	box-sizing: border-box;
+	z-index: 1;
+	display: inline-block;
+	line-height: 0.8rem;
+	font-size: 0.7rem;
+	height: auto;
+	width: auto;
+	margin: auto;
+	border-radius: 5px;
+	padding: 5px;
+	background-color: black;
+	border-color: black;
+	color: white;
+	text-align: center;
+}
+
+.ST-top {
+	transform: translate(-50%, calc(-100% - 12px));
+}
+
+.ST-right {
+	transform: translate(12px, -50%);
+}
+
+.ST-bottom {
+	transform: translate(-50%, 12px);
+}
+
+.ST-left {
+	transform: translate(calc(-100% - 12px), -50%);
+}
+
+.ST-top.ST-has-tip::after {
+	content: " ";
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: black transparent transparent transparent;
+}
+
+.ST-right.ST-has-tip::after {
+	content: " ";
+	position: absolute;
+	top: 50%;
+	right: 100%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent black transparent transparent ;
+}
+
+.ST-bottom.ST-has-tip::after {
+	content: " ";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent black transparent;
+}
+
+.ST-left.ST-has-tip::after {
+	content: " ";
+	position: absolute;
+	top: 50%;
+	left: 100%;
+	margin-top: -5px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent transparent transparent black;
+}
